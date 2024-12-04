@@ -1,5 +1,8 @@
  /* #region BASE */
  /** скидання дефолтних стилів */
+ html {
+     scroll-behavior: smooth;
+ }
 
  body {
      font-family: "Roboto", sans-serif;
