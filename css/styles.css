@@ -75,11 +75,6 @@
      overflow: hidden;
  }
 
- /*! ТИМЧАСОВИЙ КЛАС ДЛЯ ПРИХОВУВАННЯ СЕКЦІЙ, щоб не зажали при роботі. в кінці роботи класи hidden у секція забрати та стилі видалити */
- .hidden {
-     display: none;
- }
-
  /* #endregion */
 
  /* #region Common Styles */
@@ -122,8 +117,6 @@
      }
 
  }
-
-
 
  /* #endregion */
 
@@ -349,9 +342,18 @@
 
      background-color: transparent;
      border: 1px solid #e7e9fc;
+
+     transition:
+         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .modal-icon-btn {}
+ .mobile-menu-close:hover,
+ .mobile-menu-close:focus {
+     background-color: #404bbf;
+     border: none;
+     fill: #fff;
+ }
 
  .mobile-menu-nav {
      margin-bottom: auto;
@@ -427,7 +429,7 @@
      fill: #f4f4fd;
  }
 
- /* for table */
+ /* for table descktop */
  @media only screen and (min-width: 768px) {
      .mobile-menu {
          display: none;
@@ -785,7 +787,6 @@
  }
 
  /* #endregion */
-
 
  /* #region PORTFOLIO */
  /*! ---------portfolio------------------- */
