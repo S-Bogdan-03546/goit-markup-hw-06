@@ -1,0 +1,116 @@
+/* #region portfolio */
+/*! ---------portfolio------------------- */
+.portfolio {
+    background: #fff;
+}
+
+
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+
+
+. .portfolio-img {}
+
+
+
+
+
+
+
+/* #endregion */
+
+/* #region FOOTER */
+/*! -------------FOOTER------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-subtitle {}
+
+
+
+.footer-form-label {}
+
+
+
+
+
+
+
+
+
+
+
+/* #endregion */
+
+/* #region MODAL WINDOW */
+/*! ---MODAL WINDOW--- */
+
+.modal-overlay {}
+
+
+
+
+
+
+
+
+
+
+
+/*! ФОРМА */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-check {}
+
+
+
+
+
+
+
+
+.modal-check-icon {}
+
+
+
+
+
+
+
+
+
+
+/* #endregion */
