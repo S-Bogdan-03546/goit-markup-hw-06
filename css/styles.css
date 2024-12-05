@@ -100,6 +100,9 @@
  /* #region HEADER */
 
  .header {
+     position: sticky;
+     top: 0;
+     z-index: 999;
      background: #FFFFFF;
      border-bottom: 1px solid #e7e9fc;
      box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
@@ -174,7 +177,7 @@
          margin-right: 120px;
      }
 
-     /** інтерактивні посилання в спокійному стані */
+     /* інтерактивні посилання в спокійному стані */
      .header-menu-link {
          position: relative;
          display: block;
@@ -209,7 +212,7 @@
          gap: 12px;
      }
 
-     /**інтерактивні посилання в спокійному стані*/
+     /*інтерактивні посилання в спокійному стані*/
      .header-address-link {
          display: block;
          font-size: 12px;
@@ -222,7 +225,7 @@
          transition-property: color;
      }
 
-     /** інтерактивні елементи (посилання) в активному стані */
+     /* інтерактивні елементи (посилання) в активному стані */
      .header-menu-link:hover,
      .header-menu-link:focus,
      .header-menu-link.current,
@@ -243,7 +246,7 @@
      }
  }
 
- /** DESCKTOP */
+ /* DESCKTOP */
  @media only screen and (min-width: 1158px) {
      .header-logo {
          margin-right: 76px;
@@ -274,7 +277,6 @@
      width: 100%;
      height: 100%;
      background-color: #FFF;
-
      opacity: 0;
      visibility: hidden;
      pointer-events: none;
@@ -289,7 +291,7 @@
  }
 
 
- /** стилі контейнера для мобверсії сторінки */
+ /* стилі контейнера для мобверсії сторінки */
  .container {
      width: 320px;
      padding: 0 16px;
