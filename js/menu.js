@@ -7,7 +7,7 @@
     closeModalBtn: document.querySelector('[data-menu-close]'),
 
     // Додати ідентифікатор id="mob-nav-menu" насписок посилань (для закриття вікна меню при переході за посиланнями)
-    closeModallinks: document.querySelector('#mob-nav-menu'),
+    closeModallinks: document.querySelector('#mob-menu-close'),
 
     // Додати атрибут data-modal на бекдроп модалки
     modal: document.querySelector('[data-menu]'),
