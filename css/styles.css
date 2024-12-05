@@ -78,29 +78,6 @@
  /* #endregion */
 
  /* #region Common Styles */
-
- /** стилі контейнера для мобверсії сторінки */
- .container {
-     width: 320px;
-     padding: 0 16px;
-     margin: 0 auto;
- }
-
- /** стилі контейнера для планшетної версії сторінки, прописуються лише ті стилі які потрібно перевизначити */
- @media only screen and (min-width: 768px) {
-     .container {
-         width: 768px;
-     }
- }
-
- /** стилі контейнера для десктопної версії сторінки, прописуються лише ті стилі, які потрібно перевизначити */
- @media only screen and (min-width: 1158px) {
-     .container {
-         width: 1158px;
-         padding: 0 15px;
-     }
- }
-
  .features,
  .team,
  .portfolio {
@@ -130,8 +107,13 @@
 
  .header .container {
      display: flex;
-     align-items: center;
      justify-content: space-between;
+ }
+
+ @media only screen and (min-width: 768px) {
+     .header .container {
+         align-items: center;
+     }
  }
 
  .header-menu-list,
@@ -306,6 +288,29 @@
      pointer-events: auto;
  }
 
+
+ /** стилі контейнера для мобверсії сторінки */
+ .container {
+     width: 320px;
+     padding: 0 16px;
+     margin: 0 auto;
+ }
+
+ /** стилі контейнера для планшетної версії сторінки, прописуються лише ті стилі які потрібно перевизначити */
+ @media only screen and (min-width: 768px) {
+     .container {
+         width: 768px;
+     }
+ }
+
+ /** стилі контейнера для десктопної версії сторінки, прописуються лише ті стилі, які потрібно перевизначити */
+ @media only screen and (min-width: 1158px) {
+     .container {
+         width: 1158px;
+         padding: 0 15px;
+     }
+ }
+
  .mobile-menu-cotainer {
      position: relative;
      padding-top: 72px;
@@ -368,19 +373,24 @@
  }
 
  .mobile-menu-item {
+     text-align: start;
+ }
+
+ .mobile-menu-link {
      font-weight: 700;
      font-size: 36px;
      line-height: 1.11;
      letter-spacing: 0.02em;
      color: #2e2f42;
-     text-align: center;
  }
 
  .mobile-menu-link-inner {
      color: #404bbf;
  }
 
- .mobile-address {}
+ .mobile-address {
+     margin-bottom: 48px;
+ }
 
  .mobile-address-list {
      display: flex;
@@ -388,7 +398,6 @@
      justify-content: flex-start;
      flex-direction: column;
      gap: 24px;
-     margin-bottom: 48px;
  }
 
  .mobile-address-item {}
@@ -1347,7 +1356,7 @@
      transition-property: border-color;
  }
 
- .modal-form-input:not(:last-child):focus {
+ .modal-form-input:focus {
      padding-left: 38px;
  }
 
@@ -1380,15 +1389,28 @@
      font-size: 12px;
      line-height: 1.17;
      letter-spacing: 0.04em;
-     color: #8e8f99;
      opacity: 0.5;
+
+     border: 1px solid rgba(46, 47, 66, 0.4);
+     border-radius: 4px;
+     width: 100%;
+     background-color: transparent;
+     outline: transparent;
+
+     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition-property: border-color;
+ }
+
+ .modal-form-textarea:hover,
+ .modal-form-textarea:focus {
+     border-color: #4d5ae5;
  }
 
  .modal-form-textarea::placeholder {
      font-size: 12px;
      line-height: 1.17;
      letter-spacing: 0.04em;
-     color: rgba(46, 47, 66, 0.4);
+     color: #8e8f99;
  }
 
  .modal-checkbox-wrapper {
